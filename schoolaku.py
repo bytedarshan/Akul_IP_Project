@@ -112,7 +112,7 @@ def insert1():
  dob=input("Enter Date of Birth(yyyy-mm-dd): ")
  cls=input("Enter class for admission: ")
  cty=input("Enter City : ")
- db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+ db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
  cursor = db.cursor()
  sql="INSERT INTO student(sname,admno,dob,cls,cty) VALUES ( '%s' ,'%d','%s','%s','%s')"%(sname,admno,dob,cls,cty)
  try:
@@ -125,7 +125,7 @@ def insert1():
 
 def display1():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM student"
    cursor.execute(sql)
@@ -143,7 +143,7 @@ def display1():
 
 def update1():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM student"
    cursor.execute(sql)
@@ -171,7 +171,7 @@ def update1():
 
 def delete1():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM student"
    cursor.execute(sql)
@@ -202,7 +202,7 @@ def insert2():
  empno=int(input("Enter Employee No : "))
  job=input("Enter Designation: ")
  hiredate=input("Enter date of joining (yyyy-mm-dd): ")
- db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+ db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
  cursor = db.cursor()
  sql="INSERT INTO emp(ename,empno,job,hiredate) VALUES ( '%s' ,'%d','%s','%s')" %(ename,empno,job,hiredate)
  try:
@@ -215,7 +215,7 @@ def insert2():
 
 def display2():
  try:
-   db = mysql.connector.connect(user='root',password='mann',host='localhost',database='akul')
+   db = mysql.connector.connect(user='root',password='useradmin@100',host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM emp"
    cursor.execute(sql)
@@ -233,7 +233,7 @@ def display2():
 
 def update2():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM emp"
    cursor.execute(sql)
@@ -260,7 +260,7 @@ def update2():
 
 def delete2():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM emp"
    cursor.execute(sql)
@@ -291,7 +291,7 @@ def insert3():
  admno=int(input("Enter adm no: "))
  fee=float(input("Enter fee amount : "))
  month=input("Enter Month: ")
- db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+ db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
  cursor = db.cursor()
  sql="INSERT INTO fee(admno,fee,month) VALUES ( '%d','%d','%s')"%(admno,fee,month)
  try:
@@ -305,7 +305,7 @@ def insert3():
 
 def display3():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM fee"
    cursor.execute(sql)
@@ -324,7 +324,7 @@ def display3():
 
 def update3():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM fee"
    cursor.execute(sql)
@@ -351,7 +351,7 @@ def update3():
 
 def delete3():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM fee"
    cursor.execute(sql)
@@ -382,7 +382,7 @@ def insert4():
  admno=int(input("Enter Admission No : "))
  per=float(input("Enter percentage : "))
  res=input("Enter result: ")
- db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+ db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
  cursor = db.cursor()
  sql="INSERT INTO exam(sname,admno,per,res) VALUES ('%s','%d','%f','%s')"%(sname,admno,per,res)
  try:
@@ -396,7 +396,7 @@ def insert4():
 
 def display4():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM exam"
    cursor.execute(sql)
@@ -415,7 +415,7 @@ def display4():
 
 def update4():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM exam"
    cursor.execute(sql)
@@ -444,7 +444,7 @@ def update4():
 
 def delete4():
  try:
-   db = mysql.connector.connect(user='root', password='mann', host='localhost',database='akul')
+   db = mysql.connector.connect(user='root', password='useradmin@100', host='localhost',database='akul')
    cursor = db.cursor()
    sql = "SELECT * FROM exam"
    cursor.execute(sql)
